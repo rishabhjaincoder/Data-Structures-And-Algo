@@ -1,0 +1,7 @@
+if the time is linearly scaling with the inputs given then the time complexity is 
+O(n) -> linear                  // big o of n
+
+if time remain same or constant as we change the input given then the time complexity is
+O(1)                            // big o of 1
+                or
+O(n^0)                            // big o of n raise to power 0

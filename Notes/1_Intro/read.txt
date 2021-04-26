@@ -1,0 +1,9 @@
+-> in stack memory get freed whenever function returns a value, so we cannot use stacks to allocate memory dynamically.
+
+-> and heaps are used to store the memory dynamically because in heap we have power to allocate or deallocate memory at any point of time
+
+-> in case of heap there is not restriction of not able to freed the memory within same function without returning the value that was happening in case of stack
+
+-> heaps can be used to optimise memory usage
+
+-> we can do dynamic memory allocation using malloc and calloc in c and new operator in c++
