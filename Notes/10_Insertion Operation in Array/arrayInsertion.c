@@ -36,7 +36,7 @@ int main()
     if (result == 1)
     {
         size += 1;
-        printf("\nArray Traversal after insertion at index %d \n",index);
+        printf("\nSuccessfully inserted element %d at index %d \n",element, index);
         display(arr, size);
     }
     else if (result == -1)
