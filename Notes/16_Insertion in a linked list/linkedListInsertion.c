@@ -8,10 +8,12 @@ struct Node{
 
 void linkedListTraversal(struct Node *ptr)
 {
+    int i=1;
     while (ptr != NULL)
     {
-        printf("Element: %d\n", ptr->data);
+        printf("Element %d: %d\n", i, ptr->data);
         ptr = ptr->next;
+        i++;
     }
 }
 
@@ -98,9 +100,17 @@ int main(){
 
     printf("Linked list before insertion\n");
     linkedListTraversal(head);
+    // first case
     // head = insertAtFirst(head, 56);
+
+    // second case
+    // below case will not work for index 0, for that purpose use insertAtFirst();
     // head = insertAtIndex(head, 56, 1);
+
+    // third case
     // head = insertAtEnd(head, 56);
+
+    // fourth case
     head = insertAfterNode(head, third, 45);
     printf("\nLinked list after insertion\n");
     linkedListTraversal(head);
