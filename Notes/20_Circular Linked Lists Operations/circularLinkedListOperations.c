@@ -9,6 +9,7 @@ struct Node
 
 void linkedListTraversal(struct Node *head){
     struct Node *ptr = head;
+    // initially ptr = head, so we have to run it one time to that it can enter in the loop
     do{
         printf("Element is %d\n", ptr->data);
         ptr = ptr->next;
