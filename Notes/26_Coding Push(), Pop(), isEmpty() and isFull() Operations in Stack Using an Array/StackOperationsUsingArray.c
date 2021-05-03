@@ -56,6 +56,7 @@ int main(){
 
     printf("Before pushing, Full: %d\n", isFull(sp));
     printf("Before pushing, Empty: %d\n", isEmpty(sp));
+
     push(sp, 1);
     push(sp, 23);
     push(sp, 99);
@@ -67,6 +68,7 @@ int main(){
     push(sp, 89);
     push(sp, 6); // ---> Pushed 10 values 
     // push(sp, 46); // Stack Overflow since the size of the stack is 10
+    
     printf("After pushing, Full: %d\n", isFull(sp));
     printf("After pushing, Empty: %d\n", isEmpty(sp));
 

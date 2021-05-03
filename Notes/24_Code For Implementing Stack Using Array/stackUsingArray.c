@@ -34,26 +34,22 @@ int isFull(struct stack *ptr)
 
 int main()
 {
-    // struct stack s;
-    // s.size = 80;
-    // s.top = -1;
-    // s.arr = (int *) malloc(s.size * sizeof(int));
 
-    struct stack *s;
-    s->size = 80;
-    s->top = -1;
-    s->arr = (int *)malloc(s->size * sizeof(int));
+    struct stack *stack1 = (struct stack *) malloc(sizeof(struct stack));
+    stack1->size = 80;
+    stack1->top = -1;
+    stack1->arr = (int *)malloc(stack1->size * sizeof(int));
 
     // Pushing an element manually
-    // s->arr[0] = 7;
-    // s->top++;
+    // stack1->arr[0] = 7;
+    // stack1->top++;
 
     // Check if stack is empty
-    if(isEmpty(s)){
-        printf("The stack is empty");
+    if(isEmpty(stack1)){
+        printf("\nThe stack is empty");
     }
     else{
-        printf("The stack is not empty");
+        printf("\nThe stack is not empty");
     }
     return 0;
 }
