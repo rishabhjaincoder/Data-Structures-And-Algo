@@ -54,10 +54,6 @@ char pop(struct stack* ptr){
     }
 }
 
-char stackTop(struct stack* sp){
-    return sp->arr[sp->top];
-}
-
 int match(char a, char b){
     if(a=='{' && b=='}'){
         return 1;
