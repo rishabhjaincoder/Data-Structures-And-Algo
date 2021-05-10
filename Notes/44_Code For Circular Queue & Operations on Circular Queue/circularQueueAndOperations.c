@@ -51,6 +51,7 @@ int dequeue(struct circularQueue *q){
 int main(){
     struct circularQueue q;
     q.size = 4;
+    // here we have to take front and rear both as 0 (not -1), because we want to maintain 1 empty space between circular queue and to make sure queue will show full message when it is full as condition says when rear = front
     q.f = q.r = 0;
     q.arr = (int*) malloc(q.size*sizeof(int));
     
