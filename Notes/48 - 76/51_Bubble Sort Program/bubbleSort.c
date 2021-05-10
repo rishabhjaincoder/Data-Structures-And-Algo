@@ -1,3 +1,4 @@
+// in bubble sort algo, heavier element will be sent to last and other elements will bubbleup to the left in every pass subsequently
 #include<stdio.h>
 
 void printArray(int* A, int n){
