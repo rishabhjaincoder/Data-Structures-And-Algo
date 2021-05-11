@@ -10,7 +10,6 @@ void printArray(int* A, int n){
 }
 void bubbleSort(int *A, int n){
     int temp;
-    int isSorted = 0;
     for (int i = 0; i < n-1; i++) // For number of pass
     {
         printf("Working on pass number %d\n", i+1); 
@@ -25,6 +24,7 @@ void bubbleSort(int *A, int n){
     } 
 }
 
+// this adaptive bubble sort means that if the array is already sorted, it will not check for other pass and will return
 void bubbleSortAdaptive(int *A, int n){
     int temp;
     int isSorted = 0;
@@ -41,6 +41,7 @@ void bubbleSortAdaptive(int *A, int n){
                 isSorted = 0;
             }
         } 
+        // if array is sorted it will return
         if(isSorted){
             return;
         }

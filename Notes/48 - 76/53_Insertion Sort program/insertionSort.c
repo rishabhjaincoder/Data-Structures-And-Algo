@@ -20,6 +20,7 @@ void insertionSort(int *A, int n){
             A[j+1] = A[j];
             j--;
         }
+        // when j becomes -1, this will put key on the 0th index
         A[j+1] = key;
     }
 }

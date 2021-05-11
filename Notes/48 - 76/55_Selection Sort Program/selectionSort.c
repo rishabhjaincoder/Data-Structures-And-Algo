@@ -1,3 +1,6 @@
+// in selection sort our goal is to bring the smallest element to the leftmost side 
+// by comparing that element to the complete array.
+// -> it is neither adaptive not stable, it just do minimum number of swaps
 #include<stdio.h>
 
 void printArray(int* A, int n){
