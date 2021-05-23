@@ -21,7 +21,8 @@ node* insertAtFirst(node* head, int data){
     node *ptr = (node *) malloc(sizeof(node));
     ptr->data = data;
     ptr->next=head;
-    return ptr;
+    head = ptr;
+    return head;
 }
 
 // case: 2   Insert at index
@@ -115,4 +116,24 @@ node* deleteWithValue(node* head, int value){
         free(q);
     }
     return head;
+}
+
+// these are operations of stack using linkedlist
+int isEmpty(struct node* top){
+    if (top==NULL){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+
+int isFull(struct node* top){
+    struct node* p = (struct node*)malloc(sizeof(struct node));
+    if(p==NULL){
+        return 1;
+    }
+    else{
+        return 0;
+    }
 }

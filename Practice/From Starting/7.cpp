@@ -94,7 +94,7 @@ int main(){
     linkedListTraversal(head);
 
     // // case 1
-    // head = insertAtFirst(head, 56);
+    head = insertAtFirst(head, 56);
 
     // case 2
     // int index= 2;
@@ -106,8 +106,8 @@ int main(){
     // head = insertAtLast(head, element);
 
     // case 4
-    int element = 56;
-    head = insertAfterNode(head, element, second);
+    // int element = 56;
+    // head = insertAfterNode(head, element, second);
 
     cout<<"\nafter insertion"<<endl;
     linkedListTraversal(head);
